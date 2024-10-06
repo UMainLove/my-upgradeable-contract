@@ -1,0 +1,108 @@
+npx hardhat run  scripts/DeployVendingMachineV1.js --network localhost
+Deploying VendingMachineV1 proxy...
+Proxy contract address: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+Number of sodas in the vending machine: 100
+
+eth_accounts
+hardhat_metadata (20)
+eth_chainId
+anvil_metadata - Method not supported
+hardhat_metadata
+eth_chainId
+anvil_metadata - Method not supported
+hardhat_metadata
+eth_getTransactionByHash
+eth_getTransactionReceipt
+eth_getCode
+eth_accounts
+eth_call
+  WARNING: Calling an account which is not a contract
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+
+eth_blockNumber
+eth_getBlockByNumber
+eth_feeHistory
+eth_sendTransaction
+  Contract deployment: <UnrecognizedContract>
+  Contract address:    0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0
+  Transaction:         0xbcfba8622fccca0c2dba60c6c4ceb3e8252c9b6a81c6b5641c3f79323ffe209d
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            734003 of 30000000
+  Block #3:            0xc21b5329a13e55a14273df22905b2a5607fff07a37f590ab270492d28a290332
+
+eth_getTransactionByHash
+eth_getTransactionReceipt
+eth_blockNumber
+eth_call
+  Contract call:       <UnrecognizedContract>
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0
+
+
+npx hardhat run scripts/upgradeProxy.js --network localhost
+Upgrading VendingMachineV1 to VendingMachineV2...
+Upgrade successful.
+The current contract owner is: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Implementation contract address: 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
+VendingMachineV2 initialized with sodaPrice = 1000 wei.
+
+eth_getTransactionByHash
+eth_accounts
+hardhat_metadata (20)
+eth_getStorageAt
+eth_chainId
+anvil_metadata - Method not supported
+hardhat_metadata
+eth_getStorageAt
+eth_chainId
+anvil_metadata - Method not supported
+hardhat_metadata
+eth_chainId
+anvil_metadata - Method not supported
+hardhat_metadata
+eth_getTransactionByHash
+eth_getTransactionReceipt
+eth_getCode
+eth_getStorageAt
+eth_getCode
+eth_accounts
+eth_call
+  Contract call:       <UnrecognizedContract>
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x75537828f2ce51be7289709686a69cbfdbb714f1
+
+eth_blockNumber
+eth_getBlockByNumber
+eth_feeHistory
+eth_sendTransaction
+  Contract call:       <UnrecognizedContract>
+  Transaction:         0xf06ad63b6031d93d588f3620e1db4fea0c6fc3c08667187479c96c7fb31b4796
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x75537828f2ce51be7289709686a69cbfdbb714f1
+  Value:               0 ETH
+  Gas used:            35063 of 30000000
+  Block #6:            0x8783d22a7ab39e3d0b1829cd89c1e9cf7ed005d5e68c284506184946065150a4
+
+eth_getTransactionByHash
+eth_getStorageAt
+eth_call
+  Contract call:       <UnrecognizedContract>
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0
+
+eth_blockNumber
+eth_feeHistory
+eth_sendTransaction
+  Contract call:       <UnrecognizedContract>
+  Transaction:         0xee37575e078cd9b65c7bb43e9e52517f51e69614a8d218f08310b7328211dc71
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0
+  Value:               0 ETH
+  Gas used:            56048 of 30000000
+  Block #7:            0x6f9e61fdd0b93ec829814a0525239c718c4a614ab1dffddc9f4c4ab8556e0a08
+
+eth_getTransactionByHash
+eth_getTransactionReceipt
+eth_blockNumber
